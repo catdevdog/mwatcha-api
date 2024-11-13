@@ -1,0 +1,14 @@
+{
+  "name": "mwatcha-backend",
+  "version": "1.0.0",
+  "description": "mwatcha youtube db backend api",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^3.3.0",
+    "cors": "^2.8.5"
+  }
+}
