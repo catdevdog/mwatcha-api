@@ -1,7 +1,7 @@
 // routes/videos.js
 const express = require('express');
 const router = express.Router();
-const db = require('../db');
+const db = require('../../db');
 
 // 모든 비디오 조회 (정렬 기준과 개수 제한을 조건부로 추가)
 router.get('/', (req, res) => {

@@ -1,7 +1,7 @@
 // routes/playlists.js
 const express = require('express');
 const router = express.Router();
-const db = require('../db');
+const db = require('../../db');
 
 // 모든 플레이리스트 조회
 router.get('/', (req, res) => {

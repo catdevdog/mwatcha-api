@@ -1,9 +1,9 @@
 // app.js
 const express = require('express');
 const cors = require('cors');
-const channelsRouter = require('./routes/channels');
-const playlistsRouter = require('./routes/playlists');
-const videosRouter = require('./routes/videos');
+const channelsRouter = require('./routes/mwatcha/channels');
+const playlistsRouter = require('./routes/mwatcha/playlists');
+const videosRouter = require('./routes/mwatcha/videos');
 
 const app = express();
 const port = 5678;
@@ -14,9 +14,9 @@ app.use(cors());
 app.use(express.json());
 
 // 라우트 설정
-app.use('/api/v1/channels', channelsRouter);
-app.use('/api/v1/playlists', playlistsRouter);
-app.use('/api/v1/videos', videosRouter);
+app.use('/mwatcha/v1/channels', channelsRouter);
+app.use('/mwatcha/v1/playlists', playlistsRouter);
+app.use('/mwatcha/v1/videos', videosRouter);
 
 // 서버 시작
 app.listen(port, () => {

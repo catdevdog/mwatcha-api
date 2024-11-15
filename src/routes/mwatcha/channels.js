@@ -1,7 +1,7 @@
 // routes/channels.js
 const express = require('express');
 const router = express.Router();
-const db = require('../db'); // DB 연결 모듈을 따로 분리한 경우
+const db = require('../../db'); // DB 연결 모듈을 따로 분리한 경우
 
 // 모든 채널 조회
 router.get('/', async (req, res) => {
